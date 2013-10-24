@@ -23,6 +23,9 @@ module.exports = function(grunt) {
 		var taskPath = path.resolve(process.cwd(), 'node_modules/grunt-imweb/node_modules', name, 'tasks');
 		grunt.task.loadTasks( taskPath );
 	});
+	grunt.task.loadTasks( path.resolve(process.cwd(), 'node_modules/grunt-imweb/third-party/grunt-usemin/tasks/') );
+	grunt.task.loadTasks( path.resolve(process.cwd(), 'node_modules/grunt-imweb/third-party/grunt-cdn/tasks/') );
+
 	// @todo 如果依赖的模块在根目录下的node_modules已经安装过了，那么本目录下的node_modules会不会也有？
 	// 需要测试下，如果不会有，那这里得做下容错处理
 
@@ -533,7 +536,4 @@ module.exports = function(grunt) {
 	});
 
     grunt.registerTask('default', ['dev']);
-
-	// grunt.task.loadTasks('third-party/grunt-usemin/tasks/');
-	// grunt.task.loadTasks('third-party/grunt-cdn/tasks/');
 };
