@@ -20,9 +20,11 @@ module.exports = function(grunt) {
 	var search = Object.keys( packageConfig.dependencies );
 	var packageList = minimatch.match(search, '{grunt,casper}-*', {});
 	packageList.forEach(function(name){
-		grunt.task.loadTasks( tt );
+		var taskPath = path.resolve(process.cwd(), 'node_modules/grunt-imweb/node_modules', name, 'tasks');
+		grunt.task.loadTasks( taskPath );
 	});
-
+	// @todo 如果依赖的模块在根目录下的node_modules已经安装过了，那么本目录下的node_modules会不会也有？
+	// 需要测试下，如果不会有，那这里得做下容错处理
 
 	var $config = {
 		supportImgType: ['jpg', 'jpeg', 'png', 'gif', 'bmp'],
