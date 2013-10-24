@@ -1,0 +1,58 @@
+{
+  "name": "grunt-imweb",
+  "description": "IMWEB Tasks Collection For Daily Workflow.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/chyingp/grunt-imweb",
+  "author": {
+    "name": "chyingp",
+    "email": "chyingp@gmail.com",
+    "url": "http://chyingp.cnblogs.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chyingp/grunt-imweb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chyingp/grunt-imweb/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/chyingp/grunt-imweb/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.1",
+    "grunt-rev": "~0.1.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-concat": "~0.1.2",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-text-replace": "~0.3.6",
+    "grunt-inline": "~0.1.4",
+    "grunt-concurrent": "~0.1.0",
+    "datauri": "~0.2.0",
+    "uglify-js": "2.4.0",
+    "grunt-usemin": "~0.1.12",
+    "grunt-cdn": "0.2.23"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
