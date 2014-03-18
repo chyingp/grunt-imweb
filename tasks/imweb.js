@@ -17,11 +17,12 @@ module.exports = function(grunt) {
 	// 加载依赖的package
 	var packagePath = path.resolve(process.cwd(),'node_modules/grunt-imweb/package.json');	
 	var packageConfig = require( packagePath );
-	var search = Object.keys( packageConfig.dependencies );
+	var search = Object.keys( packageConfig.peerDependencies );
 	var packageList = minimatch.match(search, '{grunt,casper}-*', {});
 	packageList.forEach(function(name){
-		var taskPath = path.resolve(process.cwd(), 'node_modules/grunt-imweb/node_modules', name, 'tasks');
-		grunt.task.loadTasks( taskPath );
+		// var taskPath = path.resolve(process.cwd(), 'node_modules/grunt-imweb/node_modules', name, 'tasks');
+		// grunt.task.loadTasks( taskPath );
+		grunt.task.loadNpmTasks(name);
 	});
 	grunt.task.loadTasks( path.resolve(process.cwd(), 'node_modules/grunt-imweb/third-party/grunt-usemin/tasks/') );
 	grunt.task.loadTasks( path.resolve(process.cwd(), 'node_modules/grunt-imweb/third-party/grunt-cdn/tasks/') );
