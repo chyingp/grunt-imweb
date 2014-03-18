@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* 用例：嵌入外部css */
+@import url('outer.css');
+
+.container{
+	background: url(background.png);
+}
+/* 用例：css:图片内联 */
+.title{
+	background: url(title.png?__inline);
+}
+.content{
+	background-image: url(content.png?__inline);
+}
+
+/* 其他用例：待补充 @todo */
