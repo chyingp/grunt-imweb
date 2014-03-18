@@ -1,7 +1,7 @@
 {
   "name": "grunt-imweb",
   "description": "IMWEB Tasks Collection For Daily Workflow.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/chyingp/grunt-imweb",
   "author": {
     "name": "chyingp",
@@ -32,7 +32,6 @@
     "grunt": "~0.4.1",
     "grunt-rev": "~0.1.0",
     "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.2",
     "grunt-contrib-concat": "~0.1.2",
     "grunt-contrib-uglify": "~0.2.2",
@@ -45,6 +44,7 @@
     "grunt-concurrent": "~0.1.0"
   },
   "dependencies": {
+    "grunt-contrib-copy": "0.4.1",
     "datauri": "~0.2.0",
     "uglify-js": "2.4.0",
     "matchdep": "~0.1.1",
