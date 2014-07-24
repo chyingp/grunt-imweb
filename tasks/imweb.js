@@ -12,6 +12,11 @@ var path = require('path');
 var url = require('url');
 
 module.exports = function(grunt) {
+	// 
+	var cwd = process.cwd();
+	grunt.file.setBase(__dirname, '../');
+	require('matchdep').filter('grunt-*').forEach(grunt.loadNpmTasks);
+	grunt.file.setBase(cwd);
 
 	// 默认配置
 	require('./config')(grunt);

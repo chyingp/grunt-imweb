@@ -45,7 +45,7 @@ module.exports = function(grunt) {
         'replace:combine_inline_script',//合并连续多个script标签
         'velocity_position_reset',
         //'crossorigin',//测试环境 cdn的header未完成增加 access-control前不能使用 !!!
-        'index_cms'//新增任务 用于生成index_cms.vm文件
+        // 'index_cms'//新增任务 用于生成index_cms.vm文件 @todo 加到postProcess里
     ].filter(filterTasks);;
 
     grunt.registerTask('dist', function(md){

@@ -33,5 +33,34 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "dependencies":{
+    "matchdep": "~0.1.1",
+    "ispriter": "~0.3.0",
+    "grunt-strip": "0.2.1",
+    "grunt-usemin": "2.1.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-concat": "~0.1.2",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-requirejs": "0.4.3",
+    "grunt-text-replace": "~0.3.6",
+    "grunt-inline": "0.3.2",
+    "preprocess": "~2.0.0",
+    "grunt-template-inline": "~0.1.0",
+    "grunt-imweb-tpl-complie": "*",
+    "velocityjs": "~0.4.1",
+    "async": "~0.2.10",
+    "shelljs": "0.2.6",
+    "request": "^2.34.0",
+    "grunt-filerev": "~0.2.1",
+    "imweb_ispriter2": "^0.3.85",
+    "strip-json-comments": "^0.1.2",
+    "grunt-imweb-abs": "~0.1.0",
+    "watch": "^0.10.0",
+    "grunt-preprocess": "^4.0.0"
+  }
 }
