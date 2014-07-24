@@ -2,7 +2,6 @@
 
 var path = require('path');
 var url = require('url');
-var minimatch = require('minimatch');
 var Util = require('../module/util');
 
 module.exports = function(grunt) {

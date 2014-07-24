@@ -31,9 +31,6 @@
   "peerDependencies": {
     "grunt": "~0.4.1"
   },
-  "dependencies": {
-    "minimatch": "0.2.12"
-  },
   "keywords": [
     "gruntplugin"
   ]

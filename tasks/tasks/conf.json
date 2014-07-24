@@ -1,0 +1,33 @@
+{
+	"debug":false,
+	"input": {
+
+		/**
+		 * 原 cssRoot
+		 */
+		/*"cssSource": ["dist/css/main.min.css","dist/css/index.min.css","dist/qqlive/css/qqlive.min.css"]*/
+		"cssSource": ["dist/css/main*.css","dist/css/index*.css","dist/qqlive/css/qqlive.min.*css","dist/video/css/video.min.*css"]
+
+	},
+	"output": {
+
+		/**
+		 * 原 cssRoot
+		 */
+		"cssDist": ["dist/css","dist/css","dist/qqlive/css/","dist/video/css/"],
+
+		/**
+		 * 原 imageRoot
+		 */
+		"imageDist": "../img/sprite",
+
+		/**
+		 * 原 maxSize
+		 */
+		"maxSingleSize": 600,
+
+		"prefix":"",
+		"margin": 3,
+		"copyUnspriteImage":true
+	}
+}

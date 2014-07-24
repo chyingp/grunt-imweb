@@ -10,7 +10,6 @@
 
 var path = require('path');
 var url = require('url');
-var minimatch = require('minimatch');
 
 module.exports = function(grunt) {
 
@@ -23,6 +22,12 @@ module.exports = function(grunt) {
 		require(filepath)(grunt);
 	});
 
+	// 本地任务
+	grunt.task.loadTasks(path.resolve(__dirname, 'tasks'));
+	grunt.task.loadTasks(path.resolve(__dirname, 'proj-task/core/grunt-cdn/tasks'));
+
+
+	// 对外暴露命令
     require('./command/dev')(grunt);
     require('./command/dist')(grunt);
 };
