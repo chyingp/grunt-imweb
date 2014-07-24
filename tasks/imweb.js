@@ -23,16 +23,6 @@ module.exports = function(grunt) {
 		require(filepath)(grunt);
 	});
 
-    grunt.registerTask('dev', [
-        'clean:dev',
-        'compass:dev',
-
-        'copy:dev',
-        'velocity:dev',
-        'inline:dev',
-        'generateTemplateConfig:dev',
-        'tplComplie:dev',
-
-        'watch'
-    ]);
+    require('./command/dev')(grunt);
+    require('./command/dist')(grunt);
 };
