@@ -22,4 +22,17 @@ module.exports = function(grunt) {
 	grunt.file.expand(configGlob).forEach(function(filepath){
 		require(filepath)(grunt);
 	});
+
+    grunt.registerTask('dev', [
+        'clean:dev',
+        'compass:dev',
+
+        'copy:dev',
+        'velocity:dev',
+        'inline:dev',
+        'generateTemplateConfig:dev',
+        'tplComplie:dev',
+
+        'watch'
+    ]);
 };
